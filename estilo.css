@@ -1,0 +1,132 @@
+h1 {
+    font-size: 35px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    background: #b388eb;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+}
+main, section {
+  margin: 30px auto;
+  max-width: 900px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 16px rgba(0,0,0,0.08);
+}
+h2 {
+    margin-bottom: 15px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-bottom: 5px;
+}
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 12px;
+}
+body {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-image: url(fondo_chido.png);
+    background-size: cover;
+    padding: 0;
+    margin: 20px;
+}
+.cuadrogigante {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+.cuadrogigante img {
+  border-radius: 12px;
+  transition: transform 0.3s;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+.cuadrogigante img:hover {
+  transform: scale(1.08);
+}
+.caja {
+    background: #b388eb;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 300px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    animation-name: caja;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+}
+@keyframes caja {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.2); 
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes moverGif {
+  from {
+    transform: rotate(0deg); 
+  }
+  to {
+    transform: rotate(360deg); 
+  }
+}
+.mi-gif {
+  animation-name: moverGif;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out; 
+}
+ol, ul {
+  margin: 15px 0 20px 25px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+table {
+  border: 2px solid black;
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+}
+th {
+  border: 2px solid black;
+  background: #9c27b0;
+  padding: 10px;
+}
+td {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
+a {
+  color: #6a1b9a;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #ab47bc;
+  text-decoration: underline;
+}
+.espacio {
+  margin-left: 20px;
+}
